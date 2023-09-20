@@ -74,6 +74,9 @@ select {
 /* ---------------- */
 /* Utilities        */
 /* ---------------- */
+ul {
+    list-style: none;
+}
 
 .flex {
     display: flex;
@@ -83,27 +86,26 @@ select {
 .container {
 padding-inline: 2em; /* similar to padding: 0 2em; */
 margin-inline: auto; /* similar to margin: 0 auto; */
-width: 80%;
-min-height: 60vh;
+width: 90%;
+min-height: 40vh;
 position: relative
 }
 
 .email-wrapper {
+    background-color: var(--clr-yellow);
     background-image: url('Email-Sig.png');
+    background-repeat: no-repeat;
     background-size: cover;
-    /* padding: 1rem 1.5rem; */
 }
 
 .links {
     position: absolute;
     bottom: 0;
-    left: 1.4rem;
+    left: 1rem;
 }
 
-ul {
-    list-style: none;
-}
-
-a:hover, a:focus {
- color: var(--clr-yellow);
+@media (min-width: 1070px) {
+    .container {
+        min-height: 60vh;
+    }
 }
