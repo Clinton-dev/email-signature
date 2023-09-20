@@ -1,0 +1,109 @@
+/* ---------------- */
+/* Custom Properties*/
+/* ---------------- */
+
+:root {
+    --clr-yellow: #FAA51D;
+    --clr-accent: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+  
+    /* Font-sizes */
+    --fs-700: 4.6rem; /* 75px */
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.185rem; /* 28px */
+    --fs-300: 1rem; /* 16 px */
+    --fs-200: 0.875rem;
+  
+    /* Font Families */
+    --ff-serif: 'Inter', sans-serif;
+  }
+
+/* ---------------- */
+/* Reset            */
+/* ---------------- */
+
+/* Box sizing */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure, 
+picture {
+  margin: 0;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+/* ---------------- */
+/* Utilities        */
+/* ---------------- */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+  }
+
+.container {
+padding-inline: 2em; /* similar to padding: 0 2em; */
+margin-inline: auto; /* similar to margin: 0 auto; */
+width: 80%;
+min-height: 50vh;
+position: relative
+}
+
+.email-wrapper {
+    background-image: url('Email-Sig.png');
+    background-size: cover;
+    /* padding: 1rem 1.5rem; */
+}
+
+.links {
+    position: absolute;
+    bottom: 0;
+    left: 1.4rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover, a:focus {
+ color: var(--clr-yellow);
+}
