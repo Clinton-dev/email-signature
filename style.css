@@ -84,7 +84,7 @@ select {
 padding-inline: 2em; /* similar to padding: 0 2em; */
 margin-inline: auto; /* similar to margin: 0 auto; */
 width: 80%;
-min-height: 50vh;
+min-height: 60vh;
 position: relative
 }
 
