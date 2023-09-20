@@ -4,7 +4,8 @@
 
 :root {
     --clr-yellow: #FAA51D;
-    --clr-accent: 231 77% 90%;
+    --clr-accent: #22C7CF;
+    --clr-dark: #383838;
     --clr-white: 0 0% 100%;
   
     /* Font-sizes */
@@ -93,7 +94,7 @@ position: relative
 
 .email-wrapper {
     background-color: var(--clr-yellow);
-    background-image: url('Email-Sig.png');
+    /* background-image: url('Email-Sig.png'); */
     background-repeat: no-repeat;
     background-size: cover;
 }
